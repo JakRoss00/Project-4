@@ -18,26 +18,31 @@
     #container{
         width: 100%;
         height: auto;
-        max-height: 720px;
-        max-width: 960px;
+        /*max-height: 720px;*/
+        /*max-width: 960px;*/
         margin: 0 auto; 
         text-align: center;
-        border: 1px solid white;
+        border: 1px solid #04090E;
+        
     }
 
     #main {
         margin: 0 auto;
         width: 500px;
         height: 500px;
-        border: 1px solid white;
+        border: 1px solid #04090E;
 
 
     }
+    #main p{
+        font-size: 21px;
+        font-weight: lighter;
+    }
 
     #logo {
-        width: 50px;
-        height: 50px;
-        border: 1px solid white;
+        width: 50;
+        height: auto;
+        border: 1px solid #04090E;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -45,6 +50,12 @@
 
     }
 
+    nav {
+        margin: 5%;
+        padding-bottom: 25px;;
+
+
+    }
     nav ul{
         list-style-type: none;
    
@@ -54,11 +65,18 @@
         display: inline-block;
         padding: 5px;
         margin: 10px;
+        font-size: 24px;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
     }
 
     nav ul li:hover{
-        background-color:aqua;
-        color: black;
+        font-weight:bold;
+        font-size: 28px;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+
+
     }
 
 
@@ -68,7 +86,7 @@
 <body>
     <div id="container">
         <div id="main">
-            <figure id="logo"></figure> 
+            <figure id="logo"><a href="index.html"><img src="img/Asset 1.png" alt="ENRG" width="100%" height="auto"></a></figure> 
             <p>Enter Greatness</p>
         </div>
 
@@ -76,7 +94,7 @@
             <ul>
                 <li>What is Energy?</li>
                 <li>Where Does <br/>Energy Come From?</li>
-                <li>Who was Involved <br/>with Energy Innovations?</li>
+                <li>Who was Involved with<br/> Energy Innovations?</li>
             </ul>
         </nav>
 
