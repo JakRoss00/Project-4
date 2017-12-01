@@ -8,6 +8,12 @@
     
 </head>
 <style>
+/*
+    * {
+        border: 1px solid white;
+
+    }
+    */
     body{
         background-color: #04090E;
         color: #43B6FF;
@@ -23,15 +29,19 @@
         margin: 0 auto; 
         text-align: center;
         border: 1px solid #04090E;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         
     }
 
     #main {
-        margin: 0 auto;
+        margin: 45px;
         width: 500px;
-        height: 500px;
+        height: auto;
         border: 1px solid #04090E;
-
+        order: 1;
+        align-self: center;
 
     }
     #main p{
@@ -46,16 +56,17 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 45%;
 
     }
 
+    
     nav {
-        margin: 5%;
-        padding-bottom: 25px;;
-
-
+        order: 2;
+        margin-top: 75px;
+        margin-bottom: 75px;
     }
+    
+
     nav ul{
         list-style-type: none;
    
@@ -65,23 +76,34 @@
         display: inline-block;
         padding: 5px;
         margin: 10px;
-        font-size: 24px;
-        transition: ease-in-out;
-        transition-duration: 0.5s;
+        font-size: 18px;
+        background-color:#43B6FF;
+        opacity: 0.5;
+        width: 250px;
+        border-radius: 25px;
     }
 
-    nav ul li:hover{
-        font-weight:bold;
-        font-size: 28px;
-        transition: ease-in-out;
-        transition-duration: 0.5s;
-
-
-    }
-
+   
     nav ul li a{
         text-decoration: none;
-        color: #43B6FF;
+        color:#04090E;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+    }
+    
+     nav ul li:hover{
+        transition: ease-in;
+        transition-duration: 0.25s;
+        opacity: 1;
+
+    }
+
+    footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        order: 3;
     }
 
     footer a {
@@ -96,20 +118,21 @@
 <body>
     <div id="container">
         <div id="main">
-            <figure id="logo"><a href="index.html"><img src="img/Asset 1.png" alt="ENRG" width="100%" height="auto"></a></figure> 
+            <figure id="logo"><a href="index.html"><img src="img/Asset 1.png" alt="ENRG" width="75%" height="auto"></a></figure> 
             <p>Enter Greatness</p>
         </div>
 
         <nav>
             <ul>
                 <li><a href="#">What is Energy?</a></li>
-                <li><a href="#">Where Does <br/>Energy Come From?</a></li>
-                <li><a href="#">Who was Involved with<br/> Energy Innovations?</a></li>
+                <li><a href="#">What are Energy Sources?</a></li>
+                <li><a href="#">Why is Energy Important?</a></li>
             </ul>
         </nav>
 
         <footer>
                 <p>Copyright &copy; 2017 <br/> <a href="index.html">Jaymee Rosser</a> / <a href="doc.html">Documentation</a></p>
+        </footer>
 
     </div>
 </body>
