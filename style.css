@@ -1,0 +1,268 @@
+/* --- Main styles --- */
+
+body{
+    background-color: #04090E;
+    color: #43B6FF;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#container{
+    width: 100%;
+    height: auto;
+    /*max-height: 720px;*/
+    /*max-width: 960px;*/
+    margin: 0 auto; 
+    text-align: center;
+    border: 1px solid #04090E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#main {
+    margin: 45px;
+    width: 720px;
+    height: auto;
+    border: 1px solid #04090E;
+    order: 1;
+    align-self: center;
+
+}
+
+/* --- Home Page styles --- */
+
+.mainHome p{
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+#logo {
+    width: 50;
+    height: auto;
+    border: 1px solid #04090E;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#homeNav {
+    order: 2;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+
+#homeNav ul{
+    list-style-type: none;
+
+}
+
+#homeNav ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    background-color:#43B6FF;
+    opacity: 0.5;
+    width: 250px;
+    border-radius: 25px;
+    transition-duration: 0.25s;
+}
+
+
+#homeNav ul li a{
+    text-decoration: none;
+    color:#04090E;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#homeNav ul li:hover{
+    transition: ease-in;
+    transition-duration: 0.25s;
+    opacity: 1;
+
+}
+
+#homeFooter {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    order: 3;
+}
+
+#homeFooter a {
+    text-decoration: none;
+    color: #43B6FF;
+}
+
+/* --- Document page Styles --- */
+
+#documentation {
+    margin-top: 50px;
+    text-align: left;
+}
+
+#documentation p {
+    font-size: 18px;
+}
+
+strong{
+    text-decoration: underline;
+    font-size: 21px;
+}
+
+#homeButton a{
+    text-decoration: none;
+    font-weight: lighter;
+    color:#43B6FF;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    
+}
+
+#homeButton a:hover{
+   font-weight: bold;
+   font-size: larger;
+   transition: ease-in-out;
+   transition-duration: 0.5s;
+}
+
+#docFooter{
+    order: 3;
+    align-self: baseline center;
+}
+
+#docFooter a {
+    text-decoration: none;
+    color: #43B6FF;
+}
+
+/* --- Alternate page --- */
+
+/* page Nav */
+#pageNav{
+    order: 2;
+    margin-top: 75px;
+    margin-bottom: 75px; 
+    text-align: center;   
+}
+
+#pageNav ul{
+    list-style-type: none;
+}
+
+#pageNav ul li{
+ 
+    display: inline-block;
+    padding: 10px;
+    background-color: #43B6FF;
+    border-radius: 25px;
+    margin: 5px;
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+
+#pageNav ul li a{
+    text-decoration: none;        
+    color: #04090E;
+}
+
+#pageNav ul li:hover{
+       opacity: 1;
+       transition-duration: 1s;
+    }
+
+/* sources Slideshow */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Remove bottom margin. Needed for some browsers */
+  img {
+    margin-bottom: -4px;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
