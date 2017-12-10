@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>ENR-G: It's Everything!</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
 </head>
 <body>
     <div id="container">
         <div id="main">
-            <h1>What is Energy?</h1>
-            <p style="opacity:0.75;">Energy is everything around us. <br/>It will always be apart of our lives.</p>
-
             <section id="documentation">
+
+                    <h1 style="text-align:center;">Definitons and Laws of Energy</h1>
+                    <p style="opacity:0.75; text-align:center;">Energy is everything around us. <br/>It will always be apart of our lives.</p>
+        
                     
                     <div class="w3-content w3-display-container">
-                      <img class="mySlides" src="img/panels.jpg" style="width:100%">
-                      <img class="mySlides" src="img/windmills.jpg" style="width:100%">
-                      <img class="mySlides" src="img/powerlines.jpg" style="width:100%">
+                      <img class="mySlides" src="img/panels.jpg" style="width:100%;" alt="Panels">
+                      <img class="mySlides" src="img/windmills.jpg" style="width:100%;" alt="mills">
+                      <img class="mySlides" src="img/powerlines.jpg" style="width:100%;" alt="powerlines">
         
                     
                       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -31,9 +32,9 @@
 
  
             <nav id="pageNav">
-                <ul >                  
+                <ul >
+                    <li><a href="index.html">Home</a></li>                  
                     <li><a href="sources.html">What are Energy Sources?</a></li>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="important.html">Why is Energy Important?</a></li>
                 </ul>
             </nav>
@@ -46,25 +47,8 @@
 
 
     </div>
-    <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-            
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex-1].style.display = "block";  
-            }
-            </script>
+
+    <script src="js/myScript.js"></script>
 
 </body>
 </html>

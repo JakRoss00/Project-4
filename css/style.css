@@ -8,13 +8,9 @@ body{
 }
 
 #container{
-    width: 100%;
     height: auto;
-    /*max-height: 720px;*/
-    /*max-width: 960px;*/
     margin: 0 auto; 
     text-align: center;
-    border: 1px solid #04090E;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,7 +35,7 @@ body{
 }
 
 #logo {
-    width: 50;
+    width: 50%;
     height: auto;
     border: 1px solid #04090E;
     display: block;
@@ -58,6 +54,7 @@ body{
 
 #homeNav ul{
     list-style-type: none;
+    padding: 0;
 
 }
 
@@ -89,11 +86,12 @@ body{
 }
 
 #homeFooter {
-    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     order: 3;
+    align-self: baseline;
+    align-self: center;
 }
 
 #homeFooter a {
@@ -135,7 +133,8 @@ strong{
 
 #docFooter{
     order: 3;
-    align-self: baseline center;
+    align-self: baseline;
+    align-self: center;
 }
 
 #docFooter a {
@@ -155,15 +154,16 @@ strong{
 
 #pageNav ul{
     list-style-type: none;
+    padding: 0;
 }
 
 #pageNav ul li{
  
-    display: inline-block;
+    display: inline;
     padding: 10px;
     background-color: #43B6FF;
     border-radius: 25px;
-    margin: 5px;
+    margin: 10px;
     opacity: 0.5;
     transition-duration: 1s;
 }
@@ -205,9 +205,7 @@ strong{
     color: white;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+    border-radius: 0px 3px 3px 0px;
   }
   
   /* Position the "next button" to the right */
@@ -264,5 +262,43 @@ strong{
   .active,
   .demo:hover {
     opacity: 1;
+  }
+
+
+
+
+  /* ------------------- */
+  /* --- Media Query --- */
+
+  @media (max-width: 480px){
+
+    #main {
+        width: 90%;
+        height: auto;
+    }
+
+    #pageNav ul li{
+        
+           display: block;
+           margin-top: 15px;
+
+       }
+
+    section>h1{
+           font-size: 24px;
+       }
+
+       #documentation>p{
+        font-size: 14px;
+    }
+
+    #homeNav{
+        margin-top: 5px;
+    }
+
+    #pageNav{
+        margin-left: 50px; 
+        margin-right: 50px;
+    }
   }
 
